@@ -1,0 +1,169 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Explore MB LOGISTIX road transport, cargo transport, route planning and business logistics enquiry options in Johannesburg, South Africa.">
+
+    <meta name="theme-color" content="#101820">
+    <meta name="robots" content="index, follow">
+
+    <title>Logistics and Transport Services | MB LOGISTIX</title>
+
+    <link rel="stylesheet" href="CSS/style.css">
+    <script src="JS/script.js" defer></script>
+</head>
+
+<body>
+
+<header class="site-header">
+    <nav class="navbar" aria-label="Main navigation">
+
+        <a class="logo" href="home.html" aria-label="MB LOGISTIX home">
+            <img src="images/1.jpg"
+                 alt="MB LOGISTIX company logo"
+                 width="70"
+                 height="85">
+        </a>
+
+        <button class="menu-toggle"
+                type="button"
+                aria-expanded="false"
+                aria-controls="primary-navigation">
+            Menu
+        </button>
+
+        <div class="nav-links" id="primary-navigation">
+            <a href="index.html">Home</a>
+            <a href="about%20us.html">About Us</a>
+            <a href="services.html" aria-current="page">Services</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="enquiry.html">Enquiry</a>
+            <a href="contact.html">Contact</a>
+        </div>
+
+    </nav>
+</header>
+
+<main>
+
+    <section class="page-banner reveal">
+        <p class="eyebrow">What we do</p>
+        <h1>Logistics and Transport Services</h1>
+        <p>
+            Explore our transport enquiry categories and tell us
+            about your cargo, route and delivery requirements.
+        </p>
+    </section>
+
+    <section class="section">
+
+        <div class="section-heading reveal">
+            <p class="eyebrow">Explore our options</p>
+            <h2>Find a Logistics Service</h2>
+            <p>
+                Search the available categories or filter them to
+                find the most relevant option for your requirements.
+            </p>
+        </div>
+
+        <!-- Search, filtering and sorting -->
+        <div class="service-controls reveal">
+
+            <label for="serviceSearch">Search services</label>
+            <input type="search"
+                   id="serviceSearch"
+                   placeholder="e.g. cargo, delivery, route..."
+                   autocomplete="off">
+
+            <label for="serviceCategory">Filter by category</label>
+            <select id="serviceCategory">
+                <option value="all">All services</option>
+                <option value="transport">Transport</option>
+                <option value="planning">Planning</option>
+                <option value="business">Business</option>
+                <option value="delivery">Delivery</option>
+                <option value="custom">Custom</option>
+            </select>
+
+            <label for="serviceSort">Sort services</label>
+            <select id="serviceSort">
+                <option value="default">Default order</option>
+                <option value="az">Name: A to Z</option>
+                <option value="za">Name: Z to A</option>
+            </select>
+
+            <button class="btn btn-primary"
+                    type="button"
+                    id="resetServices">
+                Reset filters
+            </button>
+
+        </div>
+
+        <p id="serviceCount"
+           class="service-count"
+           role="status"
+           aria-live="polite">
+            Loading services...
+        </p>
+
+        <!-- JavaScript generates the service cards here -->
+        <div class="service-grid" id="serviceGrid"></div>
+
+        <p id="noServices" class="notice" hidden>
+            No matching services were found. Try another search
+            term or reset your filters.
+        </p>
+
+        <noscript>
+            <p class="notice">
+                JavaScript is required for the interactive service
+                search. Please enable JavaScript to use this feature.
+            </p>
+        </noscript>
+
+        <p class="notice">
+            The categories shown are enquiry options. Please contact
+            MB LOGISTIX to confirm actual service availability and
+            obtain a quotation.
+        </p>
+
+    </section>
+
+    <section class="cta-section reveal">
+        <div>
+            <p class="eyebrow">Need assistance?</p>
+            <h2>Have a Transport Requirement?</h2>
+            <p>
+                Provide your collection and delivery locations,
+                cargo details and preferred arrangements.
+            </p>
+        </div>
+
+        <a class="btn btn-primary" href="enquiry.html">
+            Submit a Service Enquiry
+        </a>
+    </section>
+
+</main>
+
+<footer class="site-footer">
+    <p><strong>MB LOGISTIX</strong></p>
+    <p>Johannesburg, South Africa</p>
+
+    <p>
+        <a href="about%20us.html">About Us</a> |
+        <a href="services.html">Services</a> |
+        <a href="enquiry.html">Enquiry</a> |
+        <a href="contact.html">Contact</a>
+    </p>
+
+    <p>&copy; 2026 MB LOGISTIX. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

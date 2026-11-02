@@ -1,0 +1,282 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Request a transport and logistics quotation from MB LOGISTIX in Johannesburg, South Africa. Submit your route, cargo details and delivery requirements.">
+
+    <meta name="theme-color" content="#1b263b">
+    <meta name="robots" content="index, follow">
+
+    <title>Transport Enquiry & Quotation | MB LOGISTIX</title>
+
+    <link rel="stylesheet" href="CSS/style.css">
+    <script src="JS/script.js" defer></script>
+</head>
+
+<body>
+
+<header class="site-header">
+    <nav class="navbar" aria-label="Main navigation">
+
+        <a class="logo" href="home.html" aria-label="MB LOGISTIX home">
+            <img src="images/1.jpg"
+                 alt="MB LOGISTIX logo"
+                 width="70"
+                 height="85">
+        </a>
+
+        <button class="menu-toggle"
+                type="button"
+                aria-expanded="false"
+                aria-controls="primary-navigation"
+                aria-label="Open navigation menu">
+            Menu
+        </button>
+
+        <div class="nav-links" id="primary-navigation">
+            <a href="index.html">Home</a>
+            <a href="about%20us.html">About Us</a>
+            <a href="services.html">Services</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="enquiry.html">Enquiry</a>
+            <a href="contact.html">Contact</a>
+        </div>
+
+    </nav>
+</header>
+
+<main>
+
+    <section class="page-banner reveal">
+        <p class="eyebrow">Request a quotation</p>
+        <h1>Transport Enquiry</h1>
+        <p>
+            Tell us what you need transported, where it must go
+            and when you need delivery.
+        </p>
+    </section>
+
+    <section class="section">
+        <div class="contact-layout">
+
+            <div class="contact-info reveal">
+                <p class="eyebrow">Your logistics partner</p>
+                <h2>Let's Plan Your Delivery</h2>
+
+                <p>
+                    Complete the form with your contact information,
+                    collection and delivery locations, cargo details
+                    and preferred transport service.
+                </p>
+
+                <div class="contact-detail">
+                    <h3>Collection and delivery</h3>
+                    <p>
+                        Provide the collection and destination addresses
+                        so your requirements can be reviewed.
+                    </p>
+                </div>
+
+                <div class="contact-detail">
+                    <h3>Quotation requests</h3>
+                    <p>
+                        Include cargo weight, dimensions and any special
+                        handling requirements where known.
+                    </p>
+                </div>
+
+                <div class="contact-detail">
+                    <h3>Email</h3>
+                    <p>
+                        <a href="mailto:dispatch@mblogistix.co.za">
+                            dispatch@mblogistix.co.za
+                        </a>
+                    </p>
+                </div>
+
+                <div class="notice">
+                    Submitting an enquiry does not confirm a booking,
+                    price or delivery date. These must be confirmed
+                    by MB LOGISTIX.
+                </div>
+            </div>
+
+            <div class="contact-form-container reveal">
+                <h2>Request a Transport Quote</h2>
+
+                <p>
+                    Fields marked with * are required.
+                </p>
+
+                <form id="enquiryForm"
+                      action="mailto:dispatch@mblogistix.co.za"
+                      method="post"
+                      enctype="text/plain">
+
+                    <div class="form-group">
+                        <label for="enquiryName">Full Name *</label>
+                        <input type="text"
+                               id="enquiryName"
+                               name="fullName"
+                               placeholder="Enter your full name"
+                               autocomplete="name"
+                               minlength="2"
+                               maxlength="80"
+                               required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="enquiryEmail">Email Address *</label>
+                        <input type="email"
+                               id="enquiryEmail"
+                               name="email"
+                               placeholder="you@example.com"
+                               autocomplete="email"
+                               maxlength="254"
+                               required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="enquiryPhone">Contact Number *</label>
+                        <input type="tel"
+                               id="enquiryPhone"
+                               name="contactNumber"
+                               placeholder="e.g. 0821234567"
+                               autocomplete="tel"
+                               pattern="(\+27|0)[0-9]{9}"
+                               title="Enter a South African number, e.g. 0821234567 or +27821234567"
+                               required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="enquiryService">Required Service *</label>
+                        <select id="enquiryService"
+                                name="service"
+                                required>
+                            <option value="">Select a service</option>
+                            <option value="Road Freight">Road Freight</option>
+                            <option value="Sea Freight">Sea Freight</option>
+                            <option value="Air Freight">Air Freight</option>
+                            <option value="Customs Clearance">Customs Clearance</option>
+                            <option value="Warehousing">Warehousing</option>
+                            <option value="Last-Mile Delivery">Last-Mile Delivery</option>
+                            <option value="Other">Other / Not Sure</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="collectionAddress">Collection Location *</label>
+                        <input type="text"
+                               id="collectionAddress"
+                               name="collectionAddress"
+                               placeholder="e.g. Johannesburg, Gauteng"
+                               maxlength="200"
+                               required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="deliveryAddress">Delivery Destination *</label>
+                        <input type="text"
+                               id="deliveryAddress"
+                               name="deliveryAddress"
+                               placeholder="e.g. Durban, KwaZulu-Natal"
+                               maxlength="200"
+                               required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="cargoDescription">Cargo Description *</label>
+                        <textarea id="cargoDescription"
+                                  name="cargoDescription"
+                                  rows="4"
+                                  minlength="5"
+                                  maxlength="1500"
+                                  placeholder="Describe the items you need transported"
+                                  required></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="cargoWeight">Approximate Cargo Weight (kg)</label>
+                        <input type="number"
+                               id="cargoWeight"
+                               name="cargoWeight"
+                               min="0.1"
+                               max="100000"
+                               step="0.1"
+                               placeholder="e.g. 250">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="cargoDimensions">Cargo Dimensions (optional)</label>
+                        <input type="text"
+                               id="cargoDimensions"
+                               name="cargoDimensions"
+                               maxlength="150"
+                               placeholder="e.g. 120 cm × 80 cm × 100 cm">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="deliveryDate">Preferred Collection Date</label>
+                        <input type="date"
+                               id="deliveryDate"
+                               name="preferredCollectionDate">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="specialRequirements">
+                            Special Requirements (optional)
+                        </label>
+                        <textarea id="specialRequirements"
+                                  name="specialRequirements"
+                                  rows="3"
+                                  maxlength="1000"
+                                  placeholder="Fragile goods, loading assistance or other requirements"></textarea>
+                    </div>
+
+                    <p id="enquiryError"
+                       class="form-message"
+                       role="alert"
+                       aria-live="assertive"></p>
+
+                    <button class="btn btn-primary form-submit"
+                            type="submit">
+                        Prepare Enquiry Email
+                    </button>
+
+                    <p id="enquiryMessage"
+                       class="form-message"
+                       role="status"
+                       aria-live="polite"></p>
+
+                    <p class="form-note">
+                        Your email application will open with the enquiry
+                        details. Review the message and press Send to submit it.
+                    </p>
+
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+</main>
+
+<footer class="site-footer">
+    <p><strong>MB LOGISTIX</strong></p>
+    <p>Johannesburg, South Africa</p>
+    <p>
+        <a href="services.html">Services</a> |
+        <a href="enquiry.html">Enquiry</a> |
+        <a href="contact.html">Contact</a>
+    </p>
+    <p>&copy; <span id="year">2026</span> MB LOGISTIX. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
+
+
